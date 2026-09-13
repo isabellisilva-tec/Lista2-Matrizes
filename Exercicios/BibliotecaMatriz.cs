@@ -75,8 +75,63 @@ class Matriz{
         }
          return menor;
     }
-       
- }
+   
+    public static void preencherTropas(int[,] matriz)
+        {
+        
+        int linhas = matriz.GetLength(0);
+        int colunas = matriz.GetLength(1);
+
+         Random random = new Random();//para gerar numeros aleatorios
+
+           for(int i=0; i<linhas; i++) //aqui é a minha matriz RxC (linhasXcolunas)
+        {
+            for(int j=0; j<colunas; j++)
+            {
+                matriz[i,j] = random.Next(0, 101); //aqui estou preenchendo com numeros aleatorios
+              
+            }
+        }//fim i
+        }
+
+   public static void somarForcaRegioes(int[,] matriz)
+    {
+        int linhas = matriz.GetLength(0);
+        int colunas = matriz.GetLength(1);
+        
+        //ESSE FOR MOSTRA AS REGIÕES
+        Console.WriteLine("Matriz das Tropas (Quantidade de Tropas por Cidade):");
+        for(int i=0; i<linhas; i++) 
+        {
+            Console.Write("Região "+ (i + 1)+ ": ");
+
+            for(int j=0; j<colunas; j++)
+            {
+                Console.Write(matriz[i, j] + " ");
+            }
+            Console.WriteLine(""); // Pula de linha após imprimir todas as cidades
+        }//fim i
+
+        //ESSE FOR MOSTRA A SOMA DAS REGIÕES
+        Console.WriteLine("");
+        Console.WriteLine("Força total das regiões: ");
+         for(int i=0; i<linhas; i++) 
+        {
+            int somaRegiao = 0;
+
+            for(int j=0; j<colunas; j++)
+            {
+                somaRegiao = somaRegiao + matriz[i,j];
+            }
+    
+            Console.WriteLine("Região " + (i + 1) + ": " + somaRegiao + " tropas");
+        }//fim i
+
+
 
         
+    }
+
+ }
 }
+

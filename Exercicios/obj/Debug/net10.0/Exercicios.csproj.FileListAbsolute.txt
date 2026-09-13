@@ -12,3 +12,4 @@ C:\Users\Cliente\Downloads\Lista2 - Matrizes\Exercicios\obj\Debug\net10.0\refint
 C:\Users\Cliente\Downloads\Lista2 - Matrizes\Exercicios\obj\Debug\net10.0\Exercicios.pdb
 C:\Users\Cliente\Downloads\Lista2 - Matrizes\Exercicios\obj\Debug\net10.0\Exercicios.genruntimeconfig.cache
 C:\Users\Cliente\Downloads\Lista2 - Matrizes\Exercicios\obj\Debug\net10.0\ref\Exercicios.dll
+C:\Users\Cliente\Downloads\Lista2 - Matrizes\Exercicios\obj\Debug\net10.0\Exercicios.sourcelink.json

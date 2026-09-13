@@ -1,31 +1,29 @@
-﻿using System;
+using System;
 using BibliotecaMatriz;
 
-/*Crie uma função que receba uma matriz de N Linhas x M Colunas valores inteiros e retorne qual o maior
-valor da matriz.*/
-
-class Ex1
+/*2-Crie uma função que receba uma matriz de N Linhas x M Colunas valores inteiros 
+e retorne qual o menor valor da matriz.*/
+class Exercicio2
 {
     static void Main(string[] args)
     {
         int linhas;
         int colunas;
-
-
+    
         Console.Write("Digite a quantidade de linhas: ");
         linhas = int.Parse(Console.ReadLine());
         Console.Write("Digite a quantidade de colunas: ");
         colunas = int.Parse(Console.ReadLine());
 
         int[,] matriz = new int[linhas,colunas];
-     
 
-        //chamando a minha função
+         //chamando a minha função
         Matriz.lerMatriz(matriz);
         Matriz.mostrarMatriz(matriz);
-        int maior = Matriz.maiorValor(matriz);
+        int menor = Matriz.menorValor(matriz);
         
-        Console.WriteLine($"Maior valor: {maior}");
+        Console.WriteLine($"Menor valor: {menor}");
+
 
     }
 }
